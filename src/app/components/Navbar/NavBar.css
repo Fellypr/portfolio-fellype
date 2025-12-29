@@ -16,6 +16,18 @@
             position: relative;
             left: 40px;
             color: #adb2be;
+                & li{
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                    & a{
+                        text-decoration: none;
+                        color: #adb2be;
+                    }
+                    &:hover{
+                        color: white;
+                        transform: scale(1.1);
+                    }
+                }
             
         }
         & .social{
@@ -62,6 +74,10 @@
                     width: 100%;
                     text-align: center;
                     font-size: 30px;
+                    & a{
+                        text-decoration: none;
+                        color: #adb2be;
+                    }
                 }
         }
 }

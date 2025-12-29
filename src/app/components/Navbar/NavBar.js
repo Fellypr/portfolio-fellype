@@ -35,10 +35,10 @@ export default function NavBar() {
         />
         <h3>FK</h3>
         <ul>
-          <li>Sobre mim</li>
-          <li>Projetos</li>
-          <li>Formação Acadêmica</li>
-          <li>Contato</li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#formacao-academica">Formação Acadêmica</a></li>
+          <li><a href="#contatos">Contato</a></li>
         </ul>
         <div className="social">
           <a href="https://github.com/FlavioK">
@@ -63,10 +63,10 @@ export default function NavBar() {
       {isOpen && (
         <div className="menu">
           <ul>
-            <li onClick={toggleMenu}>Sobre mim</li>
-            <li onClick={toggleMenu}>Projetos</li>
-            <li onClick={toggleMenu}>Formação Acadêmica</li>
-            <li onClick={toggleMenu}>Contato</li>
+            <li onClick={toggleMenu}><a href="#about-me">Sobre mim</a></li>
+            <li onClick={toggleMenu}><a href="#projects">Projetos</a></li>
+            <li onClick={toggleMenu}><a href="#formacao-academica">Formação Acadêmica</a></li>
+            <li onClick={toggleMenu}><a href="#contatos">Contato</a></li>
           </ul>
         </div>
       )}

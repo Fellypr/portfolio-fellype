@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name": "Mova Impex",
+    "image": "stacks-projects/Captura de tela de 2025-12-26 11-17-39.png",
+    "description": "Desenvolvi o site institucional para a Mova Impex, uma empresa especializada em serviços de comércio exterior, incluindo importação, exportação, logística e assessoria aduaneira. O foco do projeto foi criar uma experiência online clara, profissional e funcional para apresentar os serviços da empresa e facilitar o contato com clientes em potencial.\n\nTecnologia utilizada: Next.js\nTipo de trabalho: Projeto freelance\nUX/UI: Layout e UX fornecidos pelo cliente\n\nPrincipais funcionalidades:\n- Navegação intuitiva entre as principais seções (Home, Empresa, Serviços, Informações e Contato)\n- Destaque para os serviços de importação, exportação, logística e despacho aduaneiro\n- Integração com informações de contato e endereço da empresa\n- Site responsivo, otimizado para performance e navegabilidade\n\nO site foi implementado com foco em desempenho e SEO, aproveitando os recursos do Next.js para gerar uma experiência rápida e fluida ao usuário. A estrutura permite fácil atualização de conteúdo e oferece uma apresentação profissional dos serviços da Mova Impex no ambiente digital."
+  },
+  {
+    "id": "2",
+    "name": "Sistema Fabiana Perfumaria",
+    "image": "stacks-projects/Captura de tela de 2024-06-26 16-28-21.png",
+    "description": "Desenvolvi um sistema completo para a Fabiana Perfumaria, uma loja especializada em perfumes e produtos de beleza. O sistema foi criado para gerenciar o estoque, vendas e informações dos produtos, proporcionando uma experiência eficiente para o atendimento ao cliente e a gestão do negócio.\n\nTecnologia utilizada: React.js\nTipo de trabalho: Projeto freelance\nUX/UI: Design personalizado focado em clareza e profissionalismo\n\nPrincipais funcionalidades:\n- Gerenciamento de produtos com descrições detalhadas e imagens\n- Controle de estoque em tempo real\n- Sistema de vendas com registro de transações e histórico de compras\n- Interface intuitiva para administradores e clientes"
+  }
+]
