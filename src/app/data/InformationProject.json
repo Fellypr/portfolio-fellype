@@ -16,6 +16,12 @@
     "icons":[
       "FaReact",
       "AiOutlineDotNet"
+    ],
+    "ferramentas":[
+      "React",
+      "AspNet Core",
+      "SqlServer",
+      "StyleComponents"
     ]
   },
   {

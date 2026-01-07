@@ -1,5 +1,8 @@
+"use client";
 import "./CardProject.css";
-import InformationProject from "../../data/InformationProject.json";
+import { useState } from "react";
+import InformationProject from "../../../data/InformationProject.json";
+import DetailsProject from "../DetailsProjects/DetailsProject";
 
 import * as FaIcons from "react-icons/fa";
 import * as SiIcons from "react-icons/si";
@@ -20,18 +23,22 @@ function GetIcons(iconName){
 }
 
 export default function CardProject() {
+  const [showDetails, setShowDetails] = useState(false);
+
+  function toggleDetails() {
+    setShowDetails(!showDetails);
+  }
   return (
     <>
       {InformationProject.map((project) => (
         <>
-          <div className="project-card">
+          <button className="project-card" onClick={toggleDetails}>
             <picture>
               <img src={project.image} alt={project.name} />
             </picture>
             <div>
               <h3 className="name-project">{project.name}</h3>
               <div className="description-projetc">
-                <button>Ver Projeto</button>
                 <div className="icons">
                 {project.icons?.map((iconName, index) => {
                   const Icon = GetIcons(iconName);
@@ -42,7 +49,8 @@ export default function CardProject() {
               </div>
               </div>
             </div>
-          </div>
+          </button>
+          {showDetails && <DetailsProject  />}
         </>
       ))}
     </>

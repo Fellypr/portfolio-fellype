@@ -1,7 +1,7 @@
 import "./home.css";
 import "./globals.css";
 import NavBar from "./components/Navbar/NavBar";
-import CardProject from "./components/CardProjects/CardProject";
+import CardProject from "./components/Projects/CardProjects/CardProject";
 import CardFormacao from "./components/CardFormacao/CardFormacao";
 import CardContatos from "./components/CardContatos/ContactCards";
 
@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <NavBar />
       <div id="introdution">
-        <h3 className="apresentation">Olá, Meu Nome é Fellype Kenned e Sou</h3>
+        <h3 className="apresentation">Olá, Meu Nome é Fellype Kenned</h3>
         <span className="dev">Desenvolvedor FullStack</span>
       </div>
       <div id="about-me">
