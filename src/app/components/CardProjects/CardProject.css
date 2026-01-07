@@ -42,21 +42,21 @@
       &:hover {
         transform: scale(1.1);
       }
-      & .stacks-use {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-      }
     }
   }
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 @media (max-width: 680px) {
-  .project-card{
+  .project-card {
     max-width: 200px;
     height: auto;
   }
-  .description-projetc{
+  .description-projetc {
     flex-direction: column;
   }
 }
