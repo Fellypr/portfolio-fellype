@@ -1,9 +1,21 @@
 "use client";
 import "./DetailsProject.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-export default function DetailsProject({projectSelected}) {
+export default function DetailsProject({projectSelected,setShowDetails}) {
   const [imageIndex, setImageIndex] = useState(projectSelected.conteudo[0]);
+
+  useEffect(() => {
+    const outDetails = (event) =>{
+      if(event.key === "Escape"){
+        setShowDetails(false);
+      }
+    }
+    window.addEventListener("keydown", outDetails);
+    return () => {
+      window.removeEventListener("keydown", outDetails);
+    };
+  }, []);
   return (
     <main className="details-project-container">
       <section className="project-section">
@@ -14,6 +26,7 @@ export default function DetailsProject({projectSelected}) {
             width={450}
             height={225}
             priority
+            className="image-main"
           />
           <div className="image-last">
             {projectSelected.conteudo.map((image, index) => (
@@ -31,24 +44,27 @@ export default function DetailsProject({projectSelected}) {
           </div>
         </div>
         <div className="description-project-container">
-          <div className="close-button">X</div>
-          <h1 className="title-project">Titulo do Projeto</h1>
+          <div className="close-button" onClick={() => setShowDetails(false)}>x</div>
+          <h1 className="title-project">{projectSelected.name}</h1>
           <p className="description-project">
-            Daily Weather é uma aplicação web que exibe a condição climática de
-            todas as cidades, bairros, estados ou países do mundo. Obtendo tanto
-            os dados da temperatura atual, quanto os dos próximos 7 dias, além
-            da velocidade do vento, nível de umidade, data/hora e temperatura
-            máxima e mínima. Esse projeto foi desenvolvido com as seguintes
-            ferramentas:
+            {projectSelected.description}
           </p>
+
           <ul className="list-tools">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Styled Components</li>
+            <p className="title-tools">Principais Funcionalidades:</p>
+            {projectSelected?.funcionalidades.map((items, index) => (
+              <li key={index}>{items}</li>
+            ))}
+          </ul>
+          <ul className="list-tools">
+            <p className="title-tools">Ferramentas Utilizadas:</p>
+            {projectSelected?.ferramentas.map((items, index) => (
+              <li key={index}>{items}</li>
+            ))}
           </ul>
           <div className="buttons">
-            <button>Visitar o Site</button>
-            <button>Ver Repositorio</button>
+            <a className="link-visit-web" href={projectSelected.website} target="_blank" rel="noreferrer">Visitar o Site</a>
+            <a className="link-visit-web" href={projectSelected.repository} target="_blank" rel="noreferrer">Ver Repositorio</a>
           </div>
         </div>
       </section>

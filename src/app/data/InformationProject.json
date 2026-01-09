@@ -2,15 +2,22 @@
   {
     "id": "1",
     "name": "Mova Impex",
+    "image": "/stacks-projects/Captura de tela de 2025-12-26 11-17-39.png",
     "conteudo":[
       "/stacks-projects/Captura de tela de 2025-12-26 11-17-39.png",
       "/stacks-projects/Captura de tela de 2026-01-07 11-22-46.png",
       "/stacks-projects/Captura de tela de 2025-12-26 11-17-39.png",
       "/stacks-projects/Captura de tela de 2025-12-26 11-17-39.png"
     ],
-    "description": "Desenvolvi o site institucional para a Mova Impex, uma empresa especializada em serviços de comércio exterior, incluindo importação, exportação, logística e assessoria aduaneira. O foco do projeto foi criar uma experiência online clara, profissional e funcional para apresentar os serviços da empresa e facilitar o contato com clientes em potencial.\n\nTecnologia utilizada: Next.js\nTipo de trabalho: Projeto freelance\nUX/UI: Layout e UX fornecidos pelo cliente\n\nPrincipais funcionalidades:\n- Navegação intuitiva entre as principais seções (Home, Empresa, Serviços, Informações e Contato)\n- Destaque para os serviços de importação, exportação, logística e despacho aduaneiro\n- Integração com informações de contato e endereço da empresa\n- Site responsivo, otimizado para performance e navegabilidade\n\nO site foi implementado com foco em desempenho e SEO, aproveitando os recursos do Next.js para gerar uma experiência rápida e fluida ao usuário. A estrutura permite fácil atualização de conteúdo e oferece uma apresentação profissional dos serviços da Mova Impex no ambiente digital.",
+    "description": "Desenvolvimento do site institucional da Mova Impex, empresa de comércio exterior.\nO projeto focou em criar uma plataforma profissional e de alta performance para apresentar serviços de importação, exportação e logística, facilitando a conversão de novos clientes.\nTecnologia utilizada: Next.js Tipo de trabalho: Projeto freelance UX/UI: Layout e UX fornecidos pelo cliente.",
     "icons":[
       "SiNextdotjs"
+    ],
+    "funcionalidades":[
+      "Navegação intuitiva entre seções institucionais e de serviços",
+      "Divulgação estratégica de assessoria aduaneira e logística",
+      "Site responsivo com foco em SEO e tempo de carregamento",
+      "Integração direta para facilitar o contato comercial"
     ],
     "ferramentas":[
       "React",
@@ -18,8 +25,8 @@
       "SqlServer",
       "StyleComponents"
     ],
-    "repository":"https://github.com/fellypr/MovaImpex",
-    "website":"https://movaimpex.vercel.app/"
+    "repository":"https://github.com/Fellypr/MovaImpex",
+    "website":"https://www.movaimpex.com.br/"
   }
   
 ]

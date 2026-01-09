@@ -52,7 +52,7 @@ export default function CardProject() {
               </div>
             </div>
           </button>
-          {showDetails && <DetailsProject  projectSelected={projectSelected} />}
+          {showDetails && <DetailsProject  projectSelected={projectSelected}  setShowDetails={setShowDetails}/>}
         </>
       ))}
     </>

@@ -190,14 +190,14 @@
   scroll-margin-top: 8rem;
   padding: 20px;
   flex-direction: column;
-  margin-top: 12rem;
+  scroll-margin-top: 0vh !important;
   & .projects-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 }
 
@@ -208,7 +208,7 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  margin-top: 15rem;
+  margin-top: 1rem;
   & .formation-container {
     display: flex;
     justify-content: center;
