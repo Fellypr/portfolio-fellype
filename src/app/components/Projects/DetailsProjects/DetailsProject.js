@@ -1,18 +1,37 @@
+"use client";
 import "./DetailsProject.css";
+import { useState } from "react";
 import Image from "next/image";
-export default function DetailsProject() {
+export default function DetailsProject({projectSelected}) {
+  const [imageIndex, setImageIndex] = useState(projectSelected.conteudo[0]);
   return (
     <main className="details-project-container">
       <section className="project-section">
         <div className="images-project">
           <Image
-            src="/stacks-projects/Captura de tela de 2026-01-07 11-22-46.png"
+            src={imageIndex}
             alt="Projeto1"
             width={450}
             height={225}
+            priority
           />
+          <div className="image-last">
+            {projectSelected.conteudo.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                alt="Projeto1"
+                width={100}
+                height={50}
+                onMouseEnter={() => setImageIndex(image)}
+                onClick={() => setImageIndex(image)}
+                className="image-mini"
+              />
+            ))}
+          </div>
         </div>
         <div className="description-project-container">
+          <div className="close-button">X</div>
           <h1 className="title-project">Titulo do Projeto</h1>
           <p className="description-project">
             Daily Weather é uma aplicação web que exibe a condição climática de
@@ -28,9 +47,8 @@ export default function DetailsProject() {
             <li>Styled Components</li>
           </ul>
           <div className="buttons">
-            <button>Ver Projeto</button>
-            <button>Ver Projeto</button>
-            <button>Ver Projeto</button>
+            <button>Visitar o Site</button>
+            <button>Ver Repositorio</button>
           </div>
         </div>
       </section>

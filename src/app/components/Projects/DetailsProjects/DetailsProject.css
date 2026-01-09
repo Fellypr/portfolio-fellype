@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #0A192F;
+    background-color: #0a192f;
     width: 80%;
     height: 80vh;
     border-radius: 12px;
@@ -26,8 +26,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 40px;
       width: 50%;
+      margin-bottom: 1.5rem;
     }
     & .description-project-container {
       display: flex;
@@ -36,7 +37,7 @@
       align-items: flex-start;
       gap: 20px;
       width: 50%;
-      & .title-project{
+      & .title-project {
         font-size: 2rem;
         font-weight: 600;
         color: #4e9665;
@@ -82,5 +83,31 @@
         }
       }
     }
+  }
+}
+.image-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.image-mini {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.image-mini:hover {
+  transform: scale(1.2);
+}
+.close-button {
+  position: absolute;
+  top: 12%;
+  right: 12%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4e9665;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
   }
 }

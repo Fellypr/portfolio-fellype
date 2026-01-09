@@ -24,15 +24,17 @@ function GetIcons(iconName){
 
 export default function CardProject() {
   const [showDetails, setShowDetails] = useState(false);
-
-  function toggleDetails() {
-    setShowDetails(!showDetails);
+  const [projectSelected, setProjectSelected] = useState(null);
+  function selectProject(project) {
+    setProjectSelected(project);
+    setShowDetails(true);
+    console.log(project);
   }
   return (
     <>
       {InformationProject.map((project) => (
         <>
-          <button className="project-card" onClick={toggleDetails}>
+          <button className="project-card" onClick={() => selectProject(project)}>
             <picture>
               <img src={project.image} alt={project.name} />
             </picture>
@@ -50,7 +52,7 @@ export default function CardProject() {
               </div>
             </div>
           </button>
-          {showDetails && <DetailsProject  />}
+          {showDetails && <DetailsProject  projectSelected={projectSelected} />}
         </>
       ))}
     </>
