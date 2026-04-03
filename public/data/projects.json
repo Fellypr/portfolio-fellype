@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "nome": "Spotify Clone",
+    "descricaoCurta": "Desenvolvimento de uma réplica funcional da interface web do Spotify...",
+    "descricaoCompleta": "Desenvolvimento de uma réplica funcional da interface web do Spotify, focada em recriar a complexa lógica de um player de música digital.\n O projeto priorizou o gerenciamento de estado global, a persistência de dados do usuário e uma experiência de navegação fluida e sem interrupções de áudio",
+    "funcionalidades": [
+      "Player de Áudio Dinâmico: Controle total de reprodução, volume e progresso com sincronização em tempo real entre componentes.",
+      "Persistência de Estado F5: Salvamento automático do progresso da faixa e configurações de volume via localStorage.",
+      "Navegação e Busca Instantânea: Sistema de filtro em tempo real na biblioteca e no feed principal para localização rápida de álbuns e faixas."
+    ],
+    "tecnologias": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/Fellypr/Spotify-Clone",
+    "demo": "https://sportify-clone-sandy.vercel.app/",
+    "images":[
+        "/images_projects/spotify/Captura de tela de 2026-02-13 15-12-56.png",
+        "/images_projects/spotify/Captura de tela de 2026-02-13 15-14-00.png",
+        "/images_projects/spotify/Captura de tela de 2026-02-13 15-14-14.png",
+        "/images_projects/spotify/Captura de tela de 2026-02-13 15-14-27.png"
+    ]
+  },
+  {
+    "id": "2",
+    "nome": "Lists Tasks",
+    "descricaoCurta": "A organização de rotinas exige fluidez e segurança. Este projeto nasceu do desafio de integrar tecnologias distintas para criar...",
+    "descricaoCompleta": "A organização de rotinas exige fluidez e segurança. Este projeto nasceu do desafio de integrar tecnologias distintas para criar uma ferramenta de produtividade rápida e intuitiva. \n A aplicação oferece uma transição suave entre temas (Light/Dark), com persistência de preferências via LocalStorage e sincronização em tempo real com um banco de dados PostgreSQL. \nNo coração do projeto, uma API em ASP.NET Core gerencia o fluxo de dados, enquanto o Next.js entrega uma interface responsiva e otimizada para qualquer dispositivo. O resultado é um sistema de CRUD completo, protegido por camadas de segurança JWT, que entrega uma experiência nativa diretamente no navegador.",
+    "funcionalidades": [
+      "Sistema de Autenticação:",
+      "Gestão de Tarefas (CRUD)",
+      "Interface Adaptável",
+      "Dashboard analitico",
+      "Design Responsivo:"
+    ],
+    "tecnologias": ["Next.js", "Entity Framework Core", "JWT", "ASP.NET Core", "Tailwind CSS"],
+    "github": "https://github.com/Fellypr/List-Task",
+    "demo": "https://list-task-jade.vercel.app/",
+    "images":[
+        "/images_projects/listar-tarefas/Captura de tela de 2026-02-20 17-25-21.png",
+        "/images_projects/listar-tarefas/Captura de tela de 2026-02-20 17-29-05.png",
+        "/images_projects/listar-tarefas/Captura de tela de 2026-02-20 17-29-22.png"
+    ]
+  },
+  {
+    "id": "3",
+    "nome": "Mova Impex",
+    "descricaoCurta": "Desenvolvimento de site institucional para a Mova Impex, empresa especializada em Comércio Exterior e Logística Nacional/Internacional...",
+    "descricaoCompleta": "Desenvolvimento de site institucional para a Mova Impex, empresa especializada em Comércio Exterior e Logística Nacional/Internacional. \nO projeto foi executado sob demanda direta, com foco total na experiência do usuário e na entrega de um layout moderno e responsivo. \nO site apresenta uma estrutura clara e intuitiva, destacando os serviços oferecidos pela empresa, incluindo Comércio Exterior, Logística Nacional e Internacional, e Consultoria. Cada seção foi cuidadosamente projetada para fornecer informações detalhadas e relevantes, utilizando uma combinação de texto, imagens e gráficos para facilitar a compreensão dos visitantes. \nA navegação foi otimizada para garantir uma experiência fluida em todos os dispositivos, com um design responsivo que se adapta perfeitamente a diferentes tamanhos de tela. \nO resultado final é um site institucional que reflete a identidade da Mova Impex, transmitindo profissionalismo e confiança aos seus clientes potenciais.",
+    "funcionalidades": [
+      "Solução Personalizada",
+      "Layout Responsivo",
+      "SEO e Visibilidade",
+      "Performance e Estabilidade"
+    ],
+    "tecnologias": ["Next.js", "React"],
+    "github": "https://github.com/Fellypr/MovaImpex",
+    "demo": "https://www.movaimpex.com.br/",
+    "images":[
+        "/images_projects/mova-impex/Captura de tela de 2026-02-20 17-18-33.png",
+        "/images_projects/mova-impex/Captura de tela de 2026-02-20 17-18-59.png",
+        "/images_projects/mova-impex/Captura de tela de 2026-02-20 17-19-09.png",
+        "/images_projects/mova-impex/Captura de tela de 2026-02-20 17-19-22.png",
+        "/images_projects/mova-impex/Captura de tela de 2026-02-20 17-19-31.png"
+    ]
+  },
+  {
+    "id": "4",
+    "nome": "Weather App",
+    "descricaoCurta": "Este projeto é uma aplicação de consulta meteorológica em tempo real...",
+    "descricaoCompleta": "Este projeto é uma aplicação de consulta meteorológica em tempo real que utiliza a API OpenWeatherMap para fornecer dados climáticos precisos de qualquer cidade do mundo. O foco do desenvolvimento foi a criação de uma interface limpa e reativa, onde o consumo de dados externos ocorre de forma assíncrona e eficiente.",
+    "funcionalidades": [
+      "Busca Global em Tempo Real",
+      "Geolocalização Dinâmica",
+      "Tratamento de Dados Assíncronos",
+      "Visualização de Estados Climáticos",
+      "Conversão de Unidades"
+    ],
+    "tecnologias": ["React.js"],
+    "github": "https://github.com",
+    "demo": "https://demo.com",
+    "images":[
+        "/images_projects/clima/Captura de tela de 2026-02-20 18-21-02.png",
+        "/images_projects/clima/Captura de tela de 2026-02-20 18-21-13.png"
+    ]
+  }
+]
