@@ -3,6 +3,7 @@
 import { User, Code, Database, Globe } from "lucide-react";
 import { SectionHeader } from "./section-header";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import Image from "next/image";
 
 const skills = [
   { icon: Code, label: "Frontend", techs: "React, Next.js, TypeScript" },
@@ -30,7 +31,7 @@ export function AboutSection() {
           <div className="flex justify-center">
             <div className="relative">
               <div className="flex h-64 w-64 items-center justify-center rounded-2xl bg-secondary border border-border">
-                <User className="h-24 w-24 text-primary" />
+                <Image src="/imgPerfil/unnamed.png" alt="Profile" width={256} height={256} className="rounded-2xl" />
               </div>
               <div className="absolute -bottom-3 -right-3 h-64 w-64 rounded-2xl border-2 border-primary/20 -z-10" />
             </div>
