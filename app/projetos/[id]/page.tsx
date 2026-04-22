@@ -106,6 +106,7 @@ export default async function ProjectPage({
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110"
+            
           >
             <ExternalLink className="h-4 w-4" />
             Demo

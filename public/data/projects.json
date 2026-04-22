@@ -81,5 +81,28 @@
         "/images_projects/clima/Captura de tela de 2026-02-20 18-21-02.png",
         "/images_projects/clima/Captura de tela de 2026-02-20 18-21-13.png"
     ]
+  },
+  {
+    "id": "5",
+    "nome": "Sumary Youtube",
+    "descricaoCurta": "SumaryYoutube nasce de um problema real: excesso de conteúdo em vídeo e falta de tempo...",
+    "descricaoCompleta": "SumaryYoutube nasce de um problema real: excesso de conteúdo em vídeo e falta de tempo para consumi-lo com eficiência. A proposta é transformar vídeos longos do YouTube em conhecimento rápido e organizado, permitindo extrair valor imediato sem assistir horas de conteúdo.\n\n A plataforma recebe vídeos ou canais do YouTube, busca transcrições automaticamente, trata casos sem legenda no idioma desejado e utiliza IA para gerar resumos claros e objetivos organizados visualmente em mapas mentais dinâmicos.\n\nA arquitetura é moderna e distribuída: o backend em C# / ASP.NET Core gerencia regras de negócio, autenticação e integrações, enquanto um microsserviço em Python / FastAPI cuida da extração e tratamento de dados externos — cada tecnologia aplicada onde faz mais sentido. No frontend, Next.js e React entregam uma interface rápida e responsiva, com mapas mentais via Mermaid.js transformando texto bruto em informação visual de alto valor.\n\nO projeto vai muito além de um CRUD tradicional, envolvendo integração com APIs externas, processamento de dados, IA generativa, tratamento de falhas com fallback, autenticação JWT, banco relacional com PostgreSQL e containerização com Docker.",
+    "funcionalidades": [
+      "Uso de IA generativa",
+      "Segurança com JWT",
+      "Arquitetura escalável",
+      "Containerização com Docker",
+      "Integração com APIs externas"
+    ],
+    "tecnologias": ["Next.js", "C#", "ASP.NET Core", "Python", "FastAPI", "PostgreSQL", "Docker", "Entity Framework Core"],
+    "github": "https://github.com/Fellypr/SumaryFlow-cliente",
+    "demo": "https://www.linkedin.com/in/fellype-kenned-05bb94319/",
+    "images":[
+        "/images_projects/SummaryYoutube/Captura de tela de 2026-04-21 21-44-08.png",
+        "/images_projects/SummaryYoutube/Captura de tela de 2026-04-21 21-44-40.png",
+        "/images_projects/SummaryYoutube/Captura de tela de 2026-04-21 21-41-41.png",
+        "/images_projects/SummaryYoutube/Captura de tela de 2026-04-21 21-44-47.png",
+        "/images_projects/SummaryYoutube/Captura de tela de 2026-04-21 21-45-15.png"
+    ]
   }
 ]
