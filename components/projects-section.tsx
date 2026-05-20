@@ -6,6 +6,72 @@ import { SectionHeader } from "./section-header";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { useState, useEffect, useRef } from "react";
 
+//icons
+import { FaReact,FaDocker,FaPython } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { BiLogoTypescript ,BiLogoPostgresql} from "react-icons/bi";
+import { TbBrandCSharp } from "react-icons/tb";
+
+import { Terminal } from "lucide-react";
+
+function getTechIcon(techName: string) {
+  const normalized = techName.toLowerCase().trim();
+
+  switch (normalized) {
+    case "next.js":
+    case "nextjs":
+      return (
+        <SiNextdotjs className="h-4 w-4" />
+      );
+    case "react":
+    case "react.js":
+    case "reactjs":
+      return (
+        <FaReact className="h-4 w-4" />
+      );
+    case "typescript":
+    case "ts":
+      return (
+        <BiLogoTypescript className="h-4 w-4" />
+      );
+    case "tailwind css":
+    case "tailwindcss":
+    case "tailwind":
+      return (
+        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8 1 .25 1.7 1 2.5 1.8.8.85 1.6 1.7 3.3 1.7 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.9-.2-1.6-.9-2.4-1.7-.9-.8-1.7-1.8-3.4-1.8zm-6 6.4c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.9.2 1.6.9 2.4 1.7.9.8 1.7 1.8 3.4 1.8 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-1-.25-1.7-1-2.5-1.8-.8-.85-1.6-1.7-3.3-1.7z" />
+        </svg>
+      );
+    case "entity framework core":
+    case "entity framework":
+    case "ef core":
+    case "ef":
+      return (
+        <TbBrandCSharp className="h-4 w-4" />
+      );
+    case "jwt":
+      return (
+        <p className="text-[10px] font-bold ">JWT</p>
+      );
+    case "python":
+      return (
+        <FaPython className="h-4 w-4" />
+      );
+
+    case "postgresql":
+    case "postgres":
+      return (
+        <BiLogoPostgresql className="h-4 w-4" />
+      );
+    case "docker":
+      return (
+        <FaDocker className="h-4 w-4" />
+      );
+    default:
+      return <Terminal className="h-4 w-4" />;
+  }
+}
+
 function ProjectCard({ project }: { project: Project }) {
   const { ref, isVisible } = useScrollAnimation(0.1);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
@@ -75,18 +141,22 @@ function ProjectCard({ project }: { project: Project }) {
           </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 transition-all duration-500 opacity-100 group-hover:opacity-0 pointer-events-auto group-hover:pointer-events-none">
-          {project.tecnologias.slice(0, 3).map((tech) => (
-            <span
+        <div className="mt-4 flex flex-wrap items-center gap-2 transition-all duration-500 opacity-100 group-hover:opacity-0 pointer-events-auto group-hover:pointer-events-none">
+          {project.tecnologias.slice(0, 5).map((tech) => (
+            <div
               key={tech}
-              className="rounded-md bg-primary/8 px-2.5 py-1 text-xs font-semibold text-primary border border-primary/20 transition-all duration-200"
+              title={tech}
+              className="group/tech relative flex items-center justify-center rounded-lg bg-primary/5 p-2 text-primary border border-primary/10 transition-all duration-300 hover:bg-primary/15 hover:border-primary/30 hover:scale-110"
             >
-              {tech}
-            </span>
+              {getTechIcon(tech)}
+            </div>
           ))}
-          {project.tecnologias.length > 3 && (
-            <span className="text-xs text-muted-foreground py-1">
-              +{project.tecnologias.length - 3}
+          {project.tecnologias.length > 5 && (
+            <span
+              title={project.tecnologias.slice(5).join(", ")}
+              className="rounded-lg bg-muted px-2 py-1 text-xs font-semibold text-muted-foreground border border-border transition-all duration-300"
+            >
+              +{project.tecnologias.length - 5}
             </span>
           )}
         </div>

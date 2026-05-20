@@ -31,7 +31,7 @@
       "Dashboard analitico",
       "Design Responsivo:"
     ],
-    "tecnologias": ["Next.js", "Entity Framework Core", "JWT", "ASP.NET Core", "Tailwind CSS"],
+    "tecnologias": ["Next.js", "Entity Framework Core", "JWT", "Tailwind CSS"],
     "github": "https://github.com/Fellypr/List-Task",
     "demo": "https://list-task-jade.vercel.app/",
     "images":[
@@ -94,7 +94,7 @@
       "Containerização com Docker",
       "Integração com APIs externas"
     ],
-    "tecnologias": ["Next.js", "C#", "ASP.NET Core", "Python", "FastAPI", "PostgreSQL", "Docker", "Entity Framework Core"],
+    "tecnologias": ["Next.js", "Python", "PostgreSQL", "Docker", "Entity Framework Core","jwt"],
     "github": "https://github.com/Fellypr/SumaryFlow-cliente",
     "demo": "https://www.linkedin.com/in/fellype-kenned-05bb94319/",
     "images":[
