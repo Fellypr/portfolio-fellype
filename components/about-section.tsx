@@ -30,7 +30,7 @@ export function AboutSection() {
         >
           <div className="flex justify-center">
             <div className="relative">
-              <div className="flex h-64 w-64 items-center justify-center rounded-2xl bg-secondary border border-border">
+              <div className="flex h-64 w-64 items-center justify-center rounded-2xl">
                 <Image src="/imgPerfil/original.jpeg" alt="Profile" width={256} height={256} className="rounded-2xl" />
               </div>
               <div className="absolute -bottom-3 -right-3 h-64 w-64 rounded-2xl border-2 border-primary/20 -z-10" />
@@ -39,10 +39,13 @@ export function AboutSection() {
 
           <div>
             <p className="text-muted-foreground leading-relaxed text-base">
-              Sou desenvolvedor Full Stack com foco em C# (.NET Core) e frontend com React / Next.js. Em vez de focar apenas na teoria, gosto de construir software orientado a resultados — prova disso é um sistema de gestão comercial que desenvolvi do zero, publiquei e que hoje gerencia vendas e stock em ambiente de produção.
+              Trabalho como desenvolvedor Full Stack, com maior profundidade em C# com .NET Core no backend e React / Next.js no frontend. Não sigo o caminho de acumular certificações e projetos de tutorial, prefiro aprender construindo coisas que funcionam de verdade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed text-base">
-              No dia a dia, trabalho para garantir que o código seja legível, que as APIs sejam eficientes e que as interfaces entreguem uma excelente experiência de utilizador. Estou sempre focado em evoluir tecnicamente e em colaborar com a equipa para entregar soluções robustas.
+              O exemplo mais concreto disso é um sistema de gestão comercial que desenvolvi do zero: desde a modelação do banco de dados até à interface que o utilizador final usa todos os dias. Está em produção, gerencia vendas e stock, e foi exatamente esse processo de lidar com bugs reais, decisões de arquitetura e necessidades de quem usa que me ensinou mais do que qualquer curso.
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed text-base">
+              Estou sempre a aprender,não por obrigação, mas porque a área muda rápido e ficar parado tem custo. Gosto de trabalhar em equipa, de discutir abordagens e de chegar a soluções que fazem sentido para o projeto, não apenas para o momento.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
